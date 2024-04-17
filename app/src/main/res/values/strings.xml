@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">m03_costrainlayout</string>
+    <string name="executor">Исполнитель</string>
+    <string name="composition">Наименование композиции</string>
+    <string name="play">play_music</string>
+    <string name="skip_next">skip_music</string>
+    <string name="image">beatles</string>
+    <string name="skip_return">return_music</string>
+</resources>

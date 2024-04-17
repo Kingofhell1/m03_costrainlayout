@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/beatles_image"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/beatles"
+        android:contentDescription="@string/image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/play_music"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="16dp"
+        android:background="@null"
+        android:contentDescription="@string/play"
+        android:src="@drawable/play_music"
+        app:layout_constraintEnd_toEndOf="@+id/beatles_image"
+        app:layout_constraintStart_toStartOf="@+id/beatles_image"
+        app:layout_constraintTop_toBottomOf="@+id/beatles_image" />
+
+    <ImageButton
+        android:id="@+id/return_music"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="20dp"
+        android:background="@null"
+        android:src="@drawable/return_music"
+        android:contentDescription="@string/skip_return"
+        app:layout_constraintBottom_toBottomOf="@+id/play_music"
+        app:layout_constraintEnd_toStartOf="@+id/play_music"
+        app:layout_constraintTop_toTopOf="@+id/play_music"
+        app:layout_constraintVertical_bias="0.6" />
+
+    <ImageButton
+        android:id="@+id/skip_music"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:background="@null"
+        android:src="@drawable/skip_music"
+        android:contentDescription="@string/skip_next"
+        app:layout_constraintBottom_toBottomOf="@+id/play_music"
+        app:layout_constraintStart_toEndOf="@+id/play_music"
+        app:layout_constraintTop_toTopOf="@+id/play_music"
+        app:layout_constraintVertical_bias="0.6" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="@string/executor"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/play_music" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="@string/composition"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.293" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
